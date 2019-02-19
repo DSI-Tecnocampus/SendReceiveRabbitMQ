@@ -1,4 +1,4 @@
-#Publisher/Subscriber example with Spring Cloud Stream
+# Publisher/Subscriber example with Spring Cloud Stream
 This example is composed of three services, two publishers and one subscriber. One publisher just sends messages with
 the current date and time (the frequency can be changed with a paramter) and the othe publisher is a REST controller
 that sends a message when the method /greetings/{name} is called. Both publishers send their messages through different
@@ -10,7 +10,7 @@ that are created when the *subscribers* are first created. Note that if the *pub
  the queue is persistent. That is, even if there aren't any *subscribers* messages will be stored
  by the broker until they are delivered.
  
-##Project Structure
+## Project Structure
 There are three modules two for the publishers called *TimeSender* and *greetingsSender* and another for the subscriber
 called *TimeGreetingsReceiver*. These modules are independent application that can be build and run independently.
 
@@ -23,7 +23,7 @@ a console window. Navigate to <project_directory>/greetingssender, <project_dire
 execute `./mvnw clear package `
 . It will create a jar file in a directory called *target*
 
-##Running the example
+## Running the example
 **Warning:** You'll need to download and install the RabbitMQ message broker in 
 your local machine. https://www.rabbitmq.com
 
@@ -44,7 +44,7 @@ Run the services in the following order:
     * `java -jar timesender/target/timesender-0.0.1-SNAPSHOT.jar`
     * `java -jar greetingssender/target/greetingssender-0.0.1-SNAPSHOT.jar`
     
-##Observe the behaviour
+## Observe the behaviour
 Assuming that the *broker* and the *publishers* are stated:
 
 * When the first *subscriber* is started  (as described above) it begins to consume all the messages
