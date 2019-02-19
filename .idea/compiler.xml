@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="greetingssender" />
+        <module name="timegreetingsreceiver" />
+        <module name="timesender" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="greetingssender" target="1.8" />
+      <module name="timegreetingsreceiver" target="1.8" />
+      <module name="timesender" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="greetingssender" options="-parameters" />
+      <module name="timegreetingsreceiver" options="-parameters" />
+      <module name="timesender" options="-parameters" />
+    </option>
+  </component>
+</project>
