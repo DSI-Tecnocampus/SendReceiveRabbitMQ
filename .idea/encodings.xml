@@ -2,7 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/greetingssender" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/greetingssender/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/timegreetingsreceiver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timegreetingsreceiver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/timesender" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/timesender/src/main/java" charset="UTF-8" />
   </component>
 </project>

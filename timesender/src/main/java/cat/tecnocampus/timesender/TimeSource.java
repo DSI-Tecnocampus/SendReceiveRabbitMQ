@@ -29,17 +29,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-/**
- * @author Dave Syer
- * @author Glenn Renfro
- *
- */
 @EnableBinding(SenderChannels.class)
 public class TimeSource {
 
 	String dateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 
-	@InboundChannelAdapter(value = SenderChannels.TIME_CHANNEL, poller = @Poller(fixedDelay = "${fixedDelay}",
+	@InboundChannelAdapter(value = SenderChannels.TIME_CHANNEL,
+			poller = @Poller(fixedDelay = "${fixedDelay}",
 			maxMessagesPerPoll = "1"))
 	public String timerMessageSource() {
 		System.out.println("Source: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern(dateTimeFormat)));

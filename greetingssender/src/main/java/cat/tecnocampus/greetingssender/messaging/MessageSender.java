@@ -1,9 +1,9 @@
 package cat.tecnocampus.greetingssender.messaging;
 
 import cat.tecnocampus.greetingssender.configuration.GreetingsSenderChannels;
-import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.messaging.MessageChannel;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
