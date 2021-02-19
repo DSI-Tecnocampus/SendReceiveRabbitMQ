@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="timesender" />
         <module name="greetingssender" />
         <module name="timegreetingsreceiver" />
-        <module name="timesender" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="greetingssender" target="1.8" />
-      <module name="timegreetingsreceiver" target="1.8" />
-      <module name="timesender" target="1.8" />
+      <module name="greetingssender" target="11" />
+      <module name="timegreetingsreceiver" target="11" />
+      <module name="timesender" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
